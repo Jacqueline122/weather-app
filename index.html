@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/b1a8b45e6b.js" crossorigin="anonymous"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <!-- <div class="all"> -->
+    <div class="poster">
+        <div class="col" id="moveH">
+
+            <div class="description">
+                <div class="des" id="temp"></div>
+                <div class="des" id="locDesp"></div>
+
+                <div class="des" id="image"> <img class="image" id="picture"
+                        src="https://openweathermap.org/img/wn/01d@2x.png" alt=""></div>
+            </div>
+
+            <div class="container">
+                <div class="fiveColumns">
+                    <p id="one"></p>
+                    <img class="image" id="picture2" src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
+                    <p id="temp1"></p>
+                </div>
+                <div class="fiveColumns">
+                    <p id="two"></p>
+                    <img class="image" id="picture3" src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
+                    <p id="temp2"></p>
+                </div>
+                <div class="fiveColumns">
+                    <p id="three"></p>
+                    <img class="image" id="picture4" src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
+                    <p id="temp3"></p>
+                </div>
+                <div class="fiveColumns">
+                    <p id="four"></p>
+                    <img class="image" id="picture5" src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
+                    <p id="temp4"></p>
+                </div>
+                <div class="fiveColumns">
+                    <p id="five"></p>
+                    <img class="image" id="picture6" src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
+                    <p id="temp5"></p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="col">
+            <div class="scrollSec">
+                <div class="searchBar">
+                    <form>
+                        <input type="text" id="userInput" placeholder="Enter a city">
+                        <button id="enter"> <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <div class="example">
+                        <p id="NY">New York</p>
+                        <p id="P">Paris</p>
+                        <p id="LAS">Los Angeles</p>
+                    </div>
+
+                </div>
+                <div class="border"></div>
+                <div class="content">
+                    <p id="title">Weather Information</p>
+
+                    <div class="information">
+                        <div class="item">
+                            <div>Feels Like:</div>
+                            <div class="feel"></div>
+                        </div>
+                        <div class="item">
+                            <div>Humidity:</div>
+                            <div class="humidity"></div>
+                        </div>
+                        <div class="item">
+                            <div>Pressure:</div>
+                            <div class="pressure"></div>
+                        </div>
+                        <div class="item">
+                            <div>Wind Speed:</div>
+                            <div class="speed"></div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="border"></div>
+                <div class="corresMap">
+                    <p id="mapdes">Map</p>
+                    <div id="map"></div>
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzxYMNBk7cxks2I1CZzVxK7v_IRMKMlFY&v=weekly"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <script src="script.js"></script>
+</body>
